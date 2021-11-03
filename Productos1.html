@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"  content="valoracion , VALORACION, VALOR VEHICULOS, PUNTAJE VEHICULOS, puntaje, COMPARACION VALOR VEHICULO">
+    <meta name="description"  content= "Valoracion d vehiculos es una pagina cuto objetivo es mostrar el nuevo producto donde se muestra el modelo de puntaje y comparaciones en el mercado de los vehiculos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <!--<link rel="stylesheet" href="css/estilo.css">-->
+    <link rel="stylesheet" href="scss/estilos.css">
+    <title>Productos Valoracion</title>
+</head>
+<body>
+    <header>
+        <h1>Valoración de vehículos</h1>
+        <nav class="navbar navbar-expand-sm">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Producto.html">Acerca de nuestros productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="Productos1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Productos
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#productoPuntaje">Puntaje</a>
+                    <a class="dropdown-item" href="productoComparador">Comparador</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contactenos.html">Contactenos</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </nav>  
+    </header>
+    <main>
+        <section class="productoPuntaje" id="productoPuntaje">
+            
+            <h2 class="productoPuntaje__titulo">Puntaje</h2>
+            <p class="productoPuntaje__parrafo">El puntaje como se definió para este producto es asignado al vehículo cuando cumple con una rigurosa revisión de accidentes e infracciones que este haya cometido, así como los seguros obligatorios y revisiones mecánicas que este maneje sobre su vida útil , a partir de este comportamiento es que se genera el puntaje y se determina que tan bueno o malo ha sido su tenencia.</p>
+            <p>Las calificaciones se determinan de la siguiente manera:</p>
+            <ol>A : Excelente</ol>
+            <ol>B : Bueno</ol>
+            <ol>C : Regular</ol>
+            <ol>D : Malo</ol>
+            <h2>¿Como funciona?</h2>
+            <P>Para este ejemplo, se digitaría la placa y este nos mostraría la siguiente información:</P>
+            <div class="punt">
+                <label for="placa">Escribe tu placa*:</label>
+                <input type="placa" name="placa" placeholder="placa" required>
+            </div>
+            <div>
+                <input class="button1" type="submit" value="Buscar">
+            </div>
+        
+            <p>Siguiente este nos arrojaría la información correspondiente a nuestra placa:</p>
+                <table  style="margin: 0 auto;" border="3" cellspacing=10px cellpadding=20px>
+                    <tr>
+                        <th>Puntaje</th>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/puntaje.png" width="150px" alt="puntaje">
+                            <img src="img/carro.jpg" width="150px" alt="car"></td>
+                        <tr><td>
+                            <ul>
+                                <li>Placa: AAA123</li>
+                                <li>Puntaje : A</li>
+                                <li>Marca: Mazda</li>
+                                <li>Línea: 3</li>
+                                <li>Clase: Automóvil</li>
+                                <li>Cilindraje : 1.600</li>
+                                <li>Valor del mercado: $ 25.000.000</li>
+                            </ul>
+                        </td></tr>
+                    </tr>
+                    
+                </table>
+        </section>  
+        <section class="productoComparador" id="productoComparador"> 
+            <h2 class="productoComparador__titulo">Comparador</h2>
+                <p class="productoComparador__parrafo">El comparador es otro de nuestro productos donde según la referencia del vehículo te mostramos las distintas páginas que lo ofrecen y su respectivo valor adicionando las variables del puntaje, este comparador lo que hace es importar toda la información de las paginas que venden vehículos usados y te mostraría los datos según lo solicitado.
+                </p>
+                <h2>¿Como funciona?</h2>
+                <p>Seleccionamos la marca y la línea del respectivo vehículo en el que se encuentre interesado:</p>
+                <div class="comp">
+                    <label for="categoria">Selecciona la marca:</label>
+                    <select name="categoria" id="">
+                        <option value="Chevrolet">Chevrolet</option>
+                    </select>
+                </div>
+
+                <div class="comp">
+                    <label for="categoria">Selecciona la linea:</label>
+                    <select name="categoria" id="">
+                        <option value="Chevrolet">Onix</option>
+                    </select>
+                </div>
+                <div class="but1">
+                    <input class="button1" type="submit" value="Buscar">
+                </div>
+                
+                <p>Siguiente a dar buscar este nos arrojara las opciones disponibles por cada pagina:</p>
+                <table  style="margin: 0 auto;" border="3" cellspacing=10px cellpadding=20px>
+                    <tr>
+                        <th>Opción 1</th>
+                        <th>Opción 2</th>
+                        <th>Opción 3</th>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            <img src="./img/carro1.jpg" width="100px" alt="carro1">
+                            <ul>
+                                <li>Placa : AAA123</li>
+                                <li>Puntaje : A</li>
+                                <li>Marca : Chevrolet</li>
+                                <li>Linea : Onix</li>
+                                <li>Clase : Automovil</li>
+                                <li>Cilindraje : 1.600</li>
+                                <li>Valor del mercado : 40.000.000</li>
+                                <li>Link página ofertada : Mercadolibre</li>
+                            </ul>
+                        </td>
+                    
+                        
+                        <td>
+                            <img src="./img/carro2.jpg" width="100px" alt="carro2">
+                            <ul>
+                                <li>Placa : BBB123</li>
+                                <li>Puntaje : B</li>
+                                <li>Marca : Chevrolet</li>
+                                <li>Linea : Onix</li>
+                                <li>Clase : Automovil</li>
+                                <li>Cilindraje : 1.600</li>
+                                <li>Valor del mercado : 30.000.000</li>
+                                <li>Link pagina ofertada : Carroya</li>
+                            </ul>
+                        </td>
+                    
+                        
+                        <td>
+                            <img src="./img/carro3.jpg" width="100px" alt="carro3">
+                            <ul>
+                                <li>Placa : CCC123</li>
+                                <li>Puntaje : B</li>
+                                <li>Marca : Chevrolet</li>
+                                <li>Linea : Onix</li>
+                                <li>Clase : Automovil</li>
+                                <li>Cilindraje : 1.600</li>
+                                <li>Valor del mercado : 35.000.000</li>
+                                <li>Link pagina ofertada : OLX</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                        
+                </table>
+        </section>
+        </main>
+        <footer class="pie">
+            <section class="pie__anexo"><a href="img/ANEXO 2 Términos y condiciones 19.12.2016.pdf">Terminos y Condiciones de Uso</a></section>
+            <section class="pie__trabaja"> <a href="Trabaja.html">Trabaja con nosotros</a></section>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+

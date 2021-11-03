@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .navbar .container-fluid {
+  background-color: #641f64;
+  font-family: 'Quicksand', sans-serif;
+  color: cornsilk;
+}
+
+header .navbar .container-fluid .nav-link {
+  text-decoration: none;
+  color: cornsilk;
+  font-size: 20px;
+}
+
+header .navbar .container-fluid .nav-link .nav-link :hover {
+  -webkit-text-decoration: aqua;
+          text-decoration: aqua;
+}
+
+.navbar-toggler-icon {
+  background-color: #460943;
+}
+
+body {
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  font-size: 25px;
+}
+
+body h1 {
+  margin: 25px;
+  padding: 25px;
+  text-align: center;
+  color: cornsilk;
+  font-family: 'Teko', sans-serif;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: apear;
+          animation-name: apear;
+  font-size: 60px;
+}
+
+@-webkit-keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body h3 {
+  text-align: center;
+  color: cornsilk;
+  font-family: 'Teko', sans-serif;
+}
+
+body table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  table-layout: fixed;
+  border-color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .acerca {
+  margin: 1rem;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 30% 1fr;
+      grid-template-rows: 30% 1fr;
+      grid-template-areas: "titulo titulo" "parrafo imagen";
+}
+
+body .acerca__parrafo, body .acercaProducto__parrafo, body .productoPuntaje__parrafo, body .productoComparador__parrafo {
+  line-height: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: parrafo;
+  color: cornsilk;
+  font-size: 20px;
+  font-family: 'Mulish', sans-serif;
+}
+
+body .imagen {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: imagen;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 2 rem;
+  width: 100%;
+  -webkit-animation: 2s ease-out infinite alternate rota;
+          animation: 2s ease-out infinite alternate rota;
+}
+
+@-webkit-keyframes rota {
+  0% {
+    -webkit-transform: perspective(400px) scaleX(1);
+            transform: perspective(400px) scaleX(1);
+  }
+  100% {
+    -webkit-transform: perspective(400px) scaleX(-1);
+            transform: perspective(400px) scaleX(-1);
+  }
+}
+
+@keyframes rota {
+  0% {
+    -webkit-transform: perspective(400px) scaleX(1);
+            transform: perspective(400px) scaleX(1);
+  }
+  100% {
+    -webkit-transform: perspective(400px) scaleX(-1);
+            transform: perspective(400px) scaleX(-1);
+  }
+}
+
+body .analisis {
+  -webkit-transform: rotateZ(20deg);
+          transform: rotateZ(20deg);
+}
+
+body .ini {
+  margin: 20px;
+  padding: 250px;
+}
+
+body .inicio {
+  -webkit-transform: scale(0.8, 1);
+          transform: scale(0.8, 1);
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  width: 20em;
+}
+
+body .Rec {
+  margin: 25px;
+  padding: 25px;
+  text-align: left;
+  color: cornsilk;
+  font-family: 'Teko', sans-serif;
+  -webkit-transform: translate3d(2, 1, 1);
+          transform: translate3d(2, 1, 1);
+}
+
+body .Nota {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+  color: cornsilk;
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+}
+
+body .acc {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 80px;
+  width: 20em;
+  -webkit-animation: 2s ease-in-out alternate mover;
+          animation: 2s ease-in-out alternate mover;
+}
+
+@-webkit-keyframes mover {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(calc(100vw - 100%));
+            transform: translateX(calc(100vw - 100%));
+  }
+}
+
+@keyframes mover {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(calc(100vw - 100%));
+            transform: translateX(calc(100vw - 100%));
+  }
+}
+
+body a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+body .ws {
+  width: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+body label {
+  color: cornsilk;
+  margin: 8px;
+}
+
+body legend {
+  color: cornsilk;
+}
+
+body input {
+  margin: 8px;
+  -webkit-box-flex: 20px;
+      -ms-flex-positive: 20px;
+          flex-grow: 20px;
+}
+
+body li {
+  list-style: none;
+  color: cornsilk;
+}
+
+body ol {
+  list-style: none;
+  color: cornsilk;
+  text-align: center;
+}
+
+body th {
+  color: cornsilk;
+}
+
+body .imagenVehiculo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  max-width: 98%;
+  height: auto;
+  width: 60%;
+  margin: auto;
+}
+
+body .imagenAnalisis {
+  display: inline-block;
+  max-width: 98%;
+  height: auto;
+  width: 30%;
+  margin: auto;
+}
+
+body .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 10px;
+}
+
+body .punt, body .comp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px;
+  border-color: cornsilk;
+  font-family: 'Teko', sans-serif;
+  color: cornsilk;
+}
+
+body .button {
+  background-color: #641f64;
+  border: strong;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+body .button1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #641f64;
+  border: strong;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+body h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: cornsilk;
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+  padding: 60px;
+}
+
+body p {
+  line-height: 2;
+  color: cornsilk;
+  font-size: 20px;
+  font-family: 'Mulish', sans-serif;
+  padding: 60px;
+}
+
+body .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px;
+  border-color: cornsilk;
+  font-family: 'Teko', sans-serif;
+  color: cornsilk;
+}
+
+body .carousel-item img {
+  margin: 0 auto;
+}
+
+footer {
+  margin: 10px;
+  padding: 10px;
+}
+
+footer .pie .pie__anexo {
+  display: inline-block;
+  color: cornsilk;
+  margin: 50px;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+footer .pie .pie__anexo .pie__anexo :hover {
+  color: #3eb6d4;
+}
+
+footer .pie .pie__trabaja {
+  display: inline-block;
+  color: cornsilk;
+  margin: 50px;
+  padding: 30px;
+  font-size: 2rem;
+}
+
+footer .pie .pie__trabaja .pie__trabaja :hover {
+  color: #3eb6d4;
+}
+
+footer {
+  font-family: "Teko", sans-serif;
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */

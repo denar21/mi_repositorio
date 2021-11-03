@@ -1,0 +1,350 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+header{
+        .navbar{
+            .container-fluid{
+                background-color: rgb(100, 31, 100);
+                font-family: 'Quicksand', sans-serif;
+                
+                    color: cornsilk;
+                    .nav-link{
+                        text-decoration: none;
+                        color: cornsilk;
+                        font-size: 20px;
+                        .nav-link :hover{
+                            text-decoration: aqua;
+                        }
+                    }      
+                
+            }
+        }
+
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(70, 9, 67);
+}
+
+
+body{
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    font-size: 25px;
+    h1{
+        margin: 25px;
+        padding: 25px;
+        text-align: center;
+        color: cornsilk;
+        font-family: 'Teko', sans-serif;
+        animation-duration: 4s;
+        animation-name: apear;
+        font-size: 60px;
+        @keyframes apear {
+            0% {opacity: 0;}
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+    h3{
+        text-align: center;
+        color: cornsilk;
+        font-family: 'Teko', sans-serif;
+    }
+
+    table{
+        display: flex;
+        justify-content: center;
+        table-layout: fixed;
+        border-color: blueviolet;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .acerca{
+        margin: 1rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30% 1fr;
+        grid-template-areas: 
+        "titulo titulo"
+        "parrafo imagen";
+    
+    }
+
+    .acerca__parrafo,.acercaProducto__parrafo,.productoPuntaje__parrafo,.productoComparador__parrafo{
+        line-height: 2;
+        grid-area: parrafo;
+        color: cornsilk;
+        font-size: 20px;
+        font-family: 'Mulish', sans-serif;
+    }
+
+    .imagen{
+        grid-area: imagen;
+        object-fit: cover;
+        align-self: center;
+        margin-left: 2 rem;
+        width: 100%;
+        animation: 2s ease-out infinite alternate rota;
+
+        @keyframes rota {
+            0% {
+              transform: perspective(400px) scaleX(1);
+            }
+          
+            100% {
+              transform: perspective(400px) scaleX(-1);
+            }
+          }
+    }
+    
+    .analisis {
+        transform:  rotateZ(20deg);
+    
+    }
+    
+    .ini{
+        margin: 20px;
+        padding: 250px;
+        
+    }
+    
+    .inicio{
+        transform: scale(0.8,1);
+        align-self: left;
+        width: 20em;
+        
+    }
+    
+    .Rec{
+        margin: 25px;
+        padding: 25px;
+        text-align: left;
+        color: cornsilk;
+        font-family: 'Teko', sans-serif;
+        transform: translate3d(2,1,1);
+    }
+    
+    .Nota{
+        grid-area: titulo;
+        color: cornsilk;
+        font-family: 'Teko', sans-serif;
+        font-size: 30px;
+    }
+
+    .acc{
+        align-self: center;
+        padding: 80px;
+        width: 20em;
+        animation: 2s ease-in-out alternate mover;
+
+        @keyframes mover {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(calc(100vw - 100%));
+            }
+          }
+    }
+
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    
+    
+    
+    .ws{
+        
+        width: 50px;   
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    
+    
+    
+    
+    
+    label{
+        
+        color: cornsilk;
+        margin: 8px;
+    }
+    
+    legend{
+        color: cornsilk;
+    }
+    
+    input{
+       
+        margin: 8px;
+        flex-grow: 20px;
+    }
+    
+    li{
+        list-style: none;
+        color: cornsilk;
+    }
+    
+    ol{
+        list-style: none;
+        color: cornsilk;
+        text-align: center;
+    }
+    
+    th{
+        color: cornsilk;
+    }
+    
+    
+    
+    
+    .imagenVehiculo{
+        display: inline-flex;
+        max-width: 98%;
+        height: auto;
+        width: 60%;
+        margin: auto;
+    
+    }
+    
+    .imagenAnalisis{
+        display: inline-block;
+        max-width: 98%;
+        height: auto;
+        width: 30%;
+        margin: auto;
+    }
+    
+    .video{
+        display: flex;
+        padding: 10px;
+        margin: 80px;
+        align-items: center;
+    }
+    
+    #form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+    
+    .punt,.comp{
+        display: flex;
+        justify-content: center;
+        margin: 25px;
+        border-color: cornsilk;
+        font-family: 'Teko', sans-serif;
+        color: cornsilk;
+    }
+    
+    
+        .button {
+            background-color: rgb(100, 31, 100); 
+            border: strong;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 2rem;
+        }   
+    
+    .button1{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(100, 31, 100); 
+            border: strong;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+    }
+
+
+    
+    h2{
+        align-self: center;
+        color: cornsilk;
+        font-family: 'Teko', sans-serif;
+        font-size: 40px;
+        padding: 60px;
+    }
+    
+    p{
+        line-height: 2;
+        color: cornsilk;
+        font-size: 20px;
+        font-family: 'Mulish', sans-serif;
+        padding: 60px;
+    }
+    
+    .form{
+        display: flex;
+        justify-content: center;
+        margin: 25px;
+        border-color: cornsilk;
+        font-family: 'Teko', sans-serif;
+        color: cornsilk;
+    }
+
+    .carousel-item{  
+             img {
+                margin: 0 auto;
+            }
+    }
+}
+
+
+
+
+footer{
+    margin: 10px;
+    padding: 10px;
+    .pie{
+        .pie__anexo{
+            display: inline-block;
+            color: cornsilk;
+            margin: 50px;
+            padding: 20px;
+            font-size: 2rem;
+            .pie__anexo :hover{
+                color: rgb(62, 182, 212);
+            }   
+        }
+        .pie__trabaja{
+            display: inline-block;
+            color: cornsilk;
+            margin: 50px;
+            padding: 30px;
+            font-size: 2rem;
+        .pie__trabaja :hover{
+            color: rgb(62, 182, 212);
+            }
+        }
+    }
+}    
+
+@mixin font ($font,$align){
+    font-family: $font;
+    text-align: $align;
+}
+
+footer{
+    @include font(('Teko', sans-serif),center )
+}

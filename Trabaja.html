@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <!--<link rel="stylesheet" href="css/estilo.css">-->
+    <link rel="stylesheet" href="scss/estilos.css">
+    <title>Trabaja con Nosotros</title>
+</head>
+<body>
+  <header>
+    <h1>Valoración de vehículos</h1>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Producto.html">Acerca de nuestros productos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Productos1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Productos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Productos1.html">Puntaje</a>
+                <a class="dropdown-item" href="Productos1.html">Comparador</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contactenos.html">Contactenos</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>  
+</header>
+    <main>
+    
+    <section id="form">
+        <form action="#"></form>
+            <fieldset  class="margin">
+                <legend>
+                    <h2>Formulario de solicitud</h1> 
+                </legend>
+                <div>
+                    <label for="nombre">Escribe tu nombre:</label>
+                    <input type="text" name="nombre" placeholder="Nombre"><br>
+                    <label for="apellido">Escribe tu apellido:</label>
+                    <input type="text" name="apellido" placeholder="Apellido">
+                </div>
+                <div>
+                    <label for="email">Email*:</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <label for="number">Escribe tu Documento:</label>
+                    <input type="number" name="number" id="">
+                </div>
+                <div>
+                    <label for="categoria">Puesto de interes:</label>
+                    <select name="categoria" id="">
+                        <option value="Error en escoger el producto">Administrativo</option>
+                        <option value="Error al pagar">Operario</option>
+                        <option value="Producto no disponible">Informatico</option>
+                        <option value="otros">Logistico</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="genero">Selecciona tu genero:</label>
+                    <input type="radio" name="genero" id="" value="mujer">Femenino
+                    <input type="radio" name="genero" id="" value="hombre">Masculino
+                    <input type="radio" name="genero" id="" value="otro">Otro
+                </div>
+                <div>
+                    <label for="comentario" name="comentario">Describe tu perfil</label>
+                    <textarea name="comentario" id="" cols="50" rows="10"></textarea>
+                    <input class="button"  type="submit" value="Cargar hoja de vida">
+                </div>
+                <div>
+                    <input class="button" type="submit" value="enviar datos">
+                    <input class="button"  type="reset" value="borrar formulario">
+                </div>
+            </fieldset>
+    </section>
+    </main>
+    <footer class="pie">
+      <section class="pie__anexo"><a href="img/ANEXO 2 Términos y condiciones 19.12.2016.pdf">Terminos y Condiciones de Uso</a></section>
+      <section class="pie__trabaja"> <a href="Trabaja.html">Trabaja con nosotros</a></section>
+  </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
