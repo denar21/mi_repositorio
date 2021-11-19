@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <!--<link rel="stylesheet" href="css/estilo.css">-->
     <link rel="stylesheet" href="scss/estilos.css">
     <title class="titulo__nombre">Valoracion</title>
 </head>
@@ -60,27 +59,28 @@
     <div class="acerca"id="acerca">
       <div class="acerca__titulo"><h2>Acerca de nosotros </h2></div>
       <div class="acerca__parrafo"><p>Somos una empresa encargada de realizar análisis estadísticos y predictivos sobre la información vehicular que se encuentra en el país y de esta manera brindar productos de gran calidad y de uso personal como para grandes empresas.</p></div>
-    <div class="imagen"><img class="analisis" src="./img/analisis.png" width="500px" alt="analisis"></div>
+    <div class="imagen"><img class="analisis" src="./img/analisis.png" width="350rem" alt="analisis"></div>
     </div>
 
 
           <section class="ini">
               <h2 class="Nota">Sabias esto:</h2>
+            <div class="carr">
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
-                    <img class="d-block w-50" src="img/inicio.PNG" alt="First slide">
+                    <img class="d-block img-fluid" src="img/inicio.PNG"  alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-50" src="img/vehiculos.jpg" alt="Second slide">
+                    <img class="d-block img-fluid" src="img/vehiculos.jpg"   alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-50" src="img/vehiculos1.jpg" alt="Third slide">
+                    <img class="d-block img-fluid" src="img/vehiculos1.jpg"  alt="Third slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -92,13 +92,14 @@
                   <span class="sr-only">Siguiente</span>
                 </a>
               </div>
+            </div>
         </section>
 		
 		
-		 <section class="video">
+		 <div class="video">
                 <h2 class="video__titulo">Recomendaciones:</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/CwWWkPG4yUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
+                <iframe class="responsive-iframe"  src="https://www.youtube.com/embed/CwWWkPG4yUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         <section class="ws">
             <a href="https://web.whatsapp.com/"><img src="img/whats.png" width="70px" alt=""></a>
         </section>

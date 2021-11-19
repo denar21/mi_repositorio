@@ -139,7 +139,7 @@ body{
         grid-area: titulo;
         color: cornsilk;
         font-family: 'Teko', sans-serif;
-        font-size: 30px;
+        font-size: 3rem;
     }
 
     .acc{
@@ -167,7 +167,7 @@ body{
     
     .ws{
         
-        width: 50px;   
+        width: 4rem;   
         position: fixed;
         bottom: 0;
         right: 0;
@@ -279,11 +279,11 @@ body{
 
     
     h2{
-        align-self: center;
+        align-self: left;
         color: cornsilk;
         font-family: 'Teko', sans-serif;
         font-size: 40px;
-        padding: 60px;
+        padding: 30px;
     }
     
     p{
@@ -347,4 +347,117 @@ footer{
 
 footer{
     @include font(('Teko', sans-serif),center )
+}
+
+
+@media only screen and (max-width: 375px){
+    body{
+    .acerca{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, fr);
+        grid-template-areas: 
+        "titulo"
+        "titulo2"
+        "parrafo"
+        "imagen"
+        "video";
+        }
+    
+        h1{
+            margin: 25px;
+            padding: 25px;
+            text-align: center;
+            color: cornsilk;
+            font-family: 'Teko', sans-serif;
+            animation-duration: 4s;
+            animation-name: apear;
+            font-size: 3rem;
+            @keyframes apear {
+                0% {opacity: 0;}
+                100%{
+                    opacity: 1;
+                }
+            }
+        }
+
+
+    .ini{
+        grid-area: titulo;
+        text-align: left;
+        color: cornsilk;
+        font-family: 'Teko', sans-serif;
+        font-size: 2rem;
+        
+    }
+
+    .video__titulo{
+        grid-area: titulo2;
+        display: inline-block;
+        text-align: left;
+        color: cornsilk;
+        font-family: 'Teko', sans-serif;
+        font-size: 2rem;
+        }
+        
+    
+    .imagen{
+        grid-area: imagen;
+        object-fit: cover;
+        align-self: center;
+        margin-left: 1rem;
+        width: 70%;
+        animation: 2s ease-out infinite alternate rota;
+    
+        @keyframes rota {
+            0% {
+                transform: perspective(400px) scaleX(1);
+            }
+              
+            100% {
+                transform: perspective(400px) scaleX(-1);
+                }
+            }
+        }
+    .acerca__parrafo,.acercaProducto__parrafo,.productoPuntaje__parrafo,.productoComparador__parrafo{
+        line-height: 2;
+        grid-area: parrafo;
+        color: cornsilk;
+        font-size: 20px;
+        font-family: 'Mulish', sans-serif;
+        }
+        .video {
+            grid-area: video;
+            position: relative;
+            overflow: visible;
+            width: 80%;
+            padding-top: 50%; 
+          
+          
+          
+          .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 80%;
+            height: 80%;
+          }
+        }
+
+    .carr{
+        display: none;
+    }
+
+    .Nota{
+        display: none;
+    }
+    .ws{
+        
+        width: 4rem;   
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    }
 }

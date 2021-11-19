@@ -176,7 +176,7 @@ body .Nota {
   grid-area: titulo;
   color: cornsilk;
   font-family: 'Teko', sans-serif;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 body .acc {
@@ -217,7 +217,7 @@ body a {
 }
 
 body .ws {
-  width: 50px;
+  width: 4rem;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -333,13 +333,13 @@ body .button1 {
 }
 
 body h2 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
   color: cornsilk;
   font-family: 'Teko', sans-serif;
   font-size: 40px;
-  padding: 60px;
+  padding: 30px;
 }
 
 body p {
@@ -399,5 +399,135 @@ footer .pie .pie__trabaja .pie__trabaja :hover {
 footer {
   font-family: "Teko", sans-serif;
   text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+  body .acerca {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (fr)[5];
+        grid-template-rows: repeat(5, fr);
+        grid-template-areas: "titulo" "titulo2" "parrafo" "imagen" "video";
+  }
+  body h1 {
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+    color: cornsilk;
+    font-family: 'Teko', sans-serif;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-name: apear;
+            animation-name: apear;
+    font-size: 3rem;
+  }
+  @-webkit-keyframes apear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes apear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  body .ini {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: titulo;
+    text-align: left;
+    color: cornsilk;
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+  }
+  body .video__titulo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: titulo2;
+    display: inline-block;
+    text-align: left;
+    color: cornsilk;
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+  }
+  body .imagen {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: imagen;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 1rem;
+    width: 70%;
+    -webkit-animation: 2s ease-out infinite alternate rota;
+            animation: 2s ease-out infinite alternate rota;
+  }
+  @-webkit-keyframes rota {
+    0% {
+      -webkit-transform: perspective(400px) scaleX(1);
+              transform: perspective(400px) scaleX(1);
+    }
+    100% {
+      -webkit-transform: perspective(400px) scaleX(-1);
+              transform: perspective(400px) scaleX(-1);
+    }
+  }
+  @keyframes rota {
+    0% {
+      -webkit-transform: perspective(400px) scaleX(1);
+              transform: perspective(400px) scaleX(1);
+    }
+    100% {
+      -webkit-transform: perspective(400px) scaleX(-1);
+              transform: perspective(400px) scaleX(-1);
+    }
+  }
+  body .acerca__parrafo, body .acercaProducto__parrafo, body .productoPuntaje__parrafo, body .productoComparador__parrafo {
+    line-height: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: parrafo;
+    color: cornsilk;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+  }
+  body .video {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: video;
+    position: relative;
+    overflow: visible;
+    width: 80%;
+    padding-top: 50%;
+  }
+  body .video .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+  }
+  body .carr {
+    display: none;
+  }
+  body .Nota {
+    display: none;
+  }
+  body .ws {
+    width: 4rem;
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
